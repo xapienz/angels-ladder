@@ -4,11 +4,14 @@
 <!-- Main Section Layout
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <main id="index" role="main">
-  <div class="article-header light-gray"><h1>Recent Articles</h1></div>
   {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
   {{ range $paginator.Pages }}
   <div class="summary">
     <h2><a href="{{ .Permalink }}">{{ .Title }} {{ if .Draft }}:: DRAFT{{end}}</a></h2>
+    <article>
+      {{ .Summary }}
+      <a href="{{ .Permalink }}" class="post-read-more">[Read&nbsp;More]</a>
+    </article>
     <div class="meta">
       {{ .Date.Format "Jan 2, 2006" }} &nbsp;
       {{ range .Params.tags }}
