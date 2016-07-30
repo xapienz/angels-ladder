@@ -32,6 +32,8 @@
 /* 	DEFAULT ROW STYLES
 	Set bottom padding according to preference */
 .row {
+  max-width: 800px;
+  margin: 0 auto;
   padding-bottom: 0em; }
 
 /* DEFAULT COLUMN STYLES */

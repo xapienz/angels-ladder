@@ -1,13 +1,14 @@
 body {
-  background-color: #fff;
-  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  background-color: #f4f4f4;
+  font-family: sans-serif;
   font-size: 14px;
   color: #666;
   line-height: 1.6em;
   letter-spacing: 0.5px;
 }
 .container {
-  padding: 0 20px;
+  background-color: #fff;
+  padding: 20px;
 }
 h1 {
   font-size: 19px;
@@ -21,49 +22,39 @@ h5,
 h6 {
   font-size: 16px;
 }
-header a,
-header a:visited,
-main#index a,
-main#index a:visited,
-main#list a,
-main#list a:visited,
-nav a,
-nav a:visited {
-  color: #666;
+
+h1 a,
+h1 a:visited,
+h2 a,
+h2 a:visited {
+  color: #444;
 }
-article a,
-article a:visited,
-footer a,
-article a:visited {
-  color: #29abe2;
+
+a,
+a:hover,
+a:visited,
+h1 a:hover,
+h2 a:hover {
+  color: #ff6000;
 }
-header a:hover,
-article a:hover,
-main#index a:hover,
-main#list a:hover,
-nav a:hover {
-  color: #29abe2;
-}
-main#index .meta a,
-main#list .meta a,
-main#single .meta a {
-  color: #999;
-}
-main#index .meta a:hover,
-main#list .meta a:hover,
-main#single .meta a:hover {
-  color: #29abe2;
-}
-article a:hover,
-footer a:hover {
+
+a:hover {
   text-decoration: underline;
 }
+
+header a,
+header a:hover,
+header a:visited {
+  color: #fff;
+}
+
 ul,
 ol {
   margin-left: 30px;
 }
 pre {
-  margin: 25px 0;
+  margin: 12px 0;
+  line-height: 1.3em;
 }
 table {
   border: 1px solid #ccc;
@@ -86,7 +77,9 @@ img {
 }
 header {
   padding: 20px 0;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  background: #222;
+  width: 100%;
 }
 header h2 {
   font-size: 12px;
@@ -139,10 +132,10 @@ nav ul.pagination li {
   margin: 0 3px;
 }
 nav ul.pagination li.active {
-  border: 2px solid #29abe2;
+  border: 2px solid #ff6000;
 }
 nav ul.pagination li:hover {
-  border-color: #29abe2;
+  border-color: #ff6000;
 }
 nav.pagination-single {
   padding: 20px 0 20px 0;
@@ -159,14 +152,13 @@ nav.pagination-single span.next {
   max-width: 300px;
 }
 nav.pagination-single a {
-  color: #29abe2;
+  color: #ff6000;
 }
 #single aside {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 footer {
-  margin: 80px 0;
-  padding: 20px 0;
+  margin: 20px 0;
 }
 footer img {
   border-radius: 32px;
@@ -194,7 +186,7 @@ article h6 {
   margin: 40px 0 25px 0;
 }
 article p {
-  margin: 25px 0;
+  margin: 12px 0;
 }
 article code {
   color: #333;
@@ -202,10 +194,13 @@ article code {
   padding: 0 3px;
   margin: 0 3px;
   border: 1px solid #ccc;
-  font-family: consolas, "Courier New", monospace;
+  font-family: consolas, monospace;
+  line-height: 1.3em;
+  white-space: pre-wrap;
 }
 article pre code {
-  font-family: consolas, "Courier New", monospace;
+  font-family: consolas, monospace;
+  line-height: 1.3em;
 }
 article blockquote {
   margin: 25px 0;
@@ -214,7 +209,6 @@ article blockquote {
   font-style: italic;
 }
 article img {
-  display: block;
   margin: 0 auto;
   text-align: center;
 }
@@ -222,8 +216,8 @@ article #share-this {
   margin: 40px 0 40px 0;
 }
 .article-header {
-  border-left: 4px solid #29abe2;
-  margin: 10px 0 25px -4px;
+  border-left: 4px solid #ff6000;
+  margin: 10px 0 13px -4px;
   padding: 5px 0 5px 10px;
 }
 .light-gray {
@@ -234,6 +228,7 @@ article #share-this {
   margin-bottom: 20px;
   border-bottom: 1px solid #ddd;
 }
+
 .meta {
   color: #999;
   font-size: 12px;
